@@ -24,6 +24,7 @@ def get_initial_checkpoint(config):
 
 def get_checkpoint(config, name):
   checkpoint_dir = os.path.join(config.train.dir, 'checkpoint')
+  print(checkpoint_dir, name)
   return os.path.join(checkpoint_dir, name)
 
 
